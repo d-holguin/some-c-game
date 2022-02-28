@@ -1,7 +1,8 @@
-all : someGame
+CC=gcc
+CFLAGS=-Wall -g
 
 clean :
-	-rm someGame
+	-rm main
 
-someGame : someGame.c
-	gcc someGame.c -o someGame
+main : main.c
+	gcc main.c -o main
